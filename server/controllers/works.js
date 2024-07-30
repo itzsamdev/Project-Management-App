@@ -119,8 +119,11 @@ dotenv.config();
 const transporter = nodemailer.createTransport({
   service: "gmail",
   auth: {
-    user: process.env.EMAIL_USERNAME,
-    pass: process.env.EMAIL_PASSWORD
+    // user: process.env.EMAIL_USERNAME,
+    // pass: process.env.EMAIL_PASSWORD
+    user: "project",
+    pass: "xdht pugu wngb bygp"
+  
   },
   port: 465,
   host: 'smtp.gmail.com'

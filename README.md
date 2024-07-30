@@ -1,5 +1,5 @@
-# Vexa Project
-Welcome to Vexa - a project management app designed to help you manage your projects more efficiently.
+# PROJECTIFY Project
+Welcome to PROJECTIFY - a project management app designed to help you manage your projects more efficiently.
 
 ## Features
 - Project management

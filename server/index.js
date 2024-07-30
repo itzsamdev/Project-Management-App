@@ -23,9 +23,10 @@ app.disable('x-powered-by');
 
 const port = process.env.PORT || 8700;
 
+const MONGO_URL = "mongodb+srv://jimisierra2:itzsamdev@cluster0.3ws2vp6.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
 const connect = () => {
     mongoose.set('strictQuery', true);
-    mongoose.connect(process.env.MONGO_URL).then(() => {
+    mongoose.connect(MONGO_URL).then(() => {
         console.log('MongoDB connected');
     }).catch((err) => {
         console.log(err);

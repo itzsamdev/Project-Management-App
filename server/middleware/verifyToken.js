@@ -9,7 +9,8 @@ export const verifyToken = async (req, res, next) => {
     // Check if token exists
     if (!token)  return next(createError(401, "You are not authenticated!"));
 
-    const decode = await jwt.verify(token, process.env.JWT);
+    // const decode = await jwt.verify(token, process.env.JWT);
+    const decode = await jwt.verify(token, "sammy");
     req.user = decode;
     next();
   } catch (error) {
